@@ -13,8 +13,8 @@ const flightSchema = new Schema({
 
 //Compile Schema to a model
 
-const  Movie = mongoose.model('Movie', movieSchema)
+const Flight = mongoose.model('Flight', flightSchema)
 
 export {
-    Movie
+    Flight
 }
