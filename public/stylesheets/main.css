@@ -1,8 +1,23 @@
 body {
+  background-color: blueviolet;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+}
+
+i {
+  margin-right: auto;
+  justify-content: flex-start;
 }
