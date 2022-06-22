@@ -8,8 +8,8 @@
     <thead>
       <tr>
         <th>Airline</th>
-        <!-- <th>Airport</th> -->
-        <!-- <th>Flight Number</th> -->
+        <th>Airport</th>
+        <th>Flight Number</th>
         <th>Departs</th>
         <th>Details</th>
 
@@ -19,8 +19,8 @@
       <% flights.forEach(flight => { %>
         <tr>
           <td><%= flight.airline %></td>
-          <!-- <td><%= flight.airport %></td> -->
-          <!-- <td><%= flight.flightNo %></td> -->
+          <td><%= flight.airport %></td>
+          <td><%= flight.flightNo %></td>
           <td><%= flight.departs %></td>
           <td><a href="/flights/<%= flight._id %>">DETAILS</a></td>
           <td>
