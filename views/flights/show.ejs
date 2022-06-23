@@ -8,7 +8,7 @@
     <div>
       <%= flight.title %> 
       <a href="/flights/<%= flight._id %>/edit">
-        <button>Edit Flight</button>
+        <button class="btn">Edit Flight</button>
       </a>
     </div>
     <div>Airline: </div>
@@ -50,7 +50,7 @@
   <label for="price-input">Price:</label>
   <input type="number" name="price" id="price-input">
 
-  <button type="submit">Add Ticket</button>
+  <button class="btn" type="submit">Add Ticket</button>
 </section>
 </form>
 
@@ -68,7 +68,7 @@
       <option value="<%= meal._id %>"><%= meal.meal %></option>
     <% }) %>
   </select>
-  <button type="submit">Add Meal</button>
+  <button class="btn" type="submit">Add Meal</button>
 
 </section>
 
