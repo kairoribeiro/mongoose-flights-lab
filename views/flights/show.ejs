@@ -62,18 +62,18 @@
 	
 <%# add to meal form below this comment %>
 <form id="add-meal" action="/flights/<%= flight._id %>/meals" method="POST">
+  
   <select meal="mealId">
     <% meals.forEach(meal => { %>
-
       <option value="<%= meal._id %>"><%= meal.meal %></option>
     <% }) %>
+
   </select>
   <button class="btn" type="submit">Add Meal</button>
 
 </section>
 
 </form>
-
 
 </main>
   
