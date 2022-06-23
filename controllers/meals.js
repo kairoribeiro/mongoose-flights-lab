@@ -19,5 +19,5 @@ function newMeal(req, res) {
 
 export {
   newMeal as new,
-  create,
+  create
 }

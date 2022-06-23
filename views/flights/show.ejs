@@ -26,6 +26,8 @@
 
 </section>
 
+
+<section>
 <% if (flight.tickets) { %>
   <h1>Tickets:</h1>
     <% flight.tickets.forEach(ticket => { %>
@@ -49,6 +51,27 @@
   <input type="number" name="price" id="price-input">
 
   <button type="submit">Add Ticket</button>
+</section>
+</form>
+
+<section>
+  <h2>Current Meals:</h2>
+    <% flight.meal.forEach(meal => { %>
+      <p><%= meal.meal %></p>
+    <% }) %>
+	
+<%# add to meal form below this comment %>
+<form id="add-meal" action="/flights/<%= flight._id %>/meals" method="POST">
+  <select meal="mealId">
+    <% meals.forEach(meal => { %>
+
+      <option value="<%= meal._id %>"><%= meal.meal %></option>
+    <% }) %>
+  </select>
+  <button type="submit">Add Meal</button>
+
+</section>
+
 </form>
 
 
